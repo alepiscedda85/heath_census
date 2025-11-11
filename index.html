@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dati di Analisi della Salute</title>
+  <link rel="stylesheet" href="./health_analysis.css">
+</head>
+<body>
+   <nav>
+    <h1>Censimento Analisi della Salute</h1>
+<ul>
+  <li><a href="./index.html" id="home">Home </a></li>
+  <li><a href="./health_contact.html" id="contact">Contattaci </a></li>
+  <li><input type="text" id="conditionInput" placeholder="Inserisci una condizione di salute">  </li>
+  <li><button id='btnSearch'>Cerca</button>
+  </li>
+
+</ul>
+</nav>
+<div class="container">
+<div class="analysisForm">
+<h1>Analisi dei Dati Sanitari</h1>
+<div>
+<label for="name">Nome:</label>
+<input type="text" id="name">
+</div>
+<div>
+<label>Genere:</label>
+<label for="male">Maschio</label>
+<input type="radio" name="gender" id="male" value="Maschio">
+<label for="female">Femmina</label>
+<input type="radio" name="gender" id="female" value="Femmina">
+</div>
+<div>
+<label for="age">Età:</label>
+<input type="number" id="age">
+</div>
+<div>
+<label for="condition">Condizione:</label>
+<select id="condition">
+  <option value="">Seleziona condizione</option>
+  <option value="Diabete">Diabete</option>
+  <option value="Tiroide">Tiroide</option>
+  <option value="Ipertensione">Ipertensione</option>
+</select>
+</div>
+<button id="addPatient">Aggiungi Paziente</button>
+<h2>Rapporto di Analisi</h2>
+<div id="report"></div>
+</div>
+<div class="searchCondition">
+    <div id="result"></div>
+</div>
+</div>
+<script src="./health_analysis.js"></script>
+</body>
+</html>
